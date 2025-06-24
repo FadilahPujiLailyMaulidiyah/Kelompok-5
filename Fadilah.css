@@ -1,0 +1,236 @@
+body {
+    background-color: #f0f0f0;
+}
+
+.bingkai-hp {
+    width: 307px;
+    height: 639px;
+    border: 6px solid #d2cfd6;
+    border-radius: 30px;
+    margin: 30px auto;
+    background-color: white;
+    position: relative;
+    overflow: hidden;
+}
+
+.bagian-atas {
+    width: 60px;
+    height: 15px;
+    background-color: black;
+    border-radius: 50px;
+    position: absolute;
+    top: 8px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.konten {
+    margin: 45px auto;
+    padding: 25px 25px;
+    text-align: center;
+    margin-top: 80px;
+}
+
+.konten-padding {
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.logo {
+    width: 80px;
+    height: 80px;
+    background-color: #ccc;
+    border-radius: 10px;
+    margin: 0 auto 15px;
+}
+
+.form-control {
+    margin-bottom: 10px;
+}
+
+.tombol-masuk {
+    background-color: #1c1c1c;
+    color: white;
+}
+
+.tombol-masuk:hover {
+    background-color: #000;
+}
+
+.lupa-password,
+.daftar {
+    font-size: 0.9rem;
+}
+
+.daftar a {
+    text-decoration: underline;
+}
+
+.wadah-masuk {
+    max-width: 480px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.atas-header {
+    margin-top: 60px;
+}
+
+.deskripsi-form {
+    text-align: left;
+    font-size: 0.85rem;
+    margin-top: 15px;
+    margin-bottom: 1rem;
+}
+
+.form-control::placeholder {
+    font-size: 0.85rem;
+    color: #999;
+}
+
+.judul-page {
+    font-size: 1.5rem;
+    font-weight: 680;
+}
+
+.sorting-info {
+    text-align: center;
+    font-size: 0.75rem;
+    color: #6c757d;
+    margin-bottom: 2rem;
+}
+
+.sort-key {
+    color: #000;
+    font-weight: 600;
+}
+
+.deskripsi-kecil {
+    font-size: 0.75rem;
+    color: #6c757d;
+}
+
+.deskripsi-singkat {
+    font-size: 0.75rem;
+    color: #000000;
+}
+
+.deskripsi {
+    margin-top: 30px;
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+.textarea-besar {
+    height: 90px;
+    resize: none;
+    overflow: hidden;
+}
+
+.deskripsi-konten {
+    margin-top: 1px;
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+.profil-icon {
+    width: 120px;
+    height: 120px;
+    background-color: #eee;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    border-radius: 50%;
+}
+
+.profil-icon i {
+    font-size: 80px;
+    color: #000;
+}
+
+.ringkasan-box {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 12px;
+    font-size: 0.85rem;
+    background-color: #fff;
+}
+
+.navigasi-bawah {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 10px 0;
+    background-color: #fff;
+    border-top: 1px solid #ddd;
+    display: flex;
+    justify-content: space-around;
+}
+
+.navigasi-bawah i {
+    font-size: 1.4rem;
+}
+
+.tombol-simpan {
+    border-radius: 10px;
+    padding: 4px 10px;
+    font-size: 0.8rem;
+}
+
+.tombol-tambah {
+    padding: 4px 10px;
+    font-size: 0.8rem;
+    border-radius: 10px;
+}
+
+.tombol-kembali i {
+    font-size: 24px;
+    color: black;
+}
+
+.tombol-kembali {
+    padding: 0;
+    background: none;
+    border: none;
+}
+
+.custom-dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.custom-dropdown .sort-key {
+    cursor: pointer;
+    user-select: none;
+    padding: 2px 8px;
+    border-radius: 4px;
+    transition: background 0.2s;
+}
+
+.custom-dropdown .sort-key:hover {
+    background: #f0f0f0;
+}
+
+.custom-dropdown .dropdown-sort {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    min-width: 120px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    z-index: 100;
+}
+
+.custom-dropdown .dropdown-item {
+    padding: 8px 16px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.custom-dropdown .dropdown-item:hover {
+    background: #f5f5f5;
+}
