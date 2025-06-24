@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Profil Pengguna</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="profil.css">
+</head>
+<body style="background-color: #fff;">
+
+    <!-- Tombol back -->
+    <a href="#" class="back-btn text-dark"><i class="bi bi-arrow-return-left"></i></a>
+
+    <!-- Foto profil -->
+    <div class="profile-pic text-center my-4">
+        <img src="uploads/foto_user.jpg" alt="Foto Profil" class="img-fluid rounded-circle profile-img" style="width: 150px; height: 150px;">
+    </div>
+
+    <h2 class="fw-bold text-center mb-4">Halo Panji Sunari</h2>
+    <br>
+
+    <div class="container mb-4">
+        <div class="row justify-content-center">
+            <div class="col-10 col-md-6">
+                <div class="d-flex justify-content-between mb-2">
+                    <div class="fw-bold">Nama Lengkap</div>
+                    <div>Panji Sunari</div>
+                </div>
+                <div class="d-flex justify-content-between mb-2">
+                    <div class="fw-bold">Email</div>
+                    <div>panji@gmail.com</div>
+                </div>
+                <div class="d-flex justify-content-between mb-2">
+                    <div class="fw-bold">NIM</div>
+                    <div>245150400000</div>
+                </div>
+            </div>
+        </div>
+        <br>
+
+        <div class="d-flex justify-content-center gap-3 mt-4">
+            <!-- Tombol Hapus Akun (trigger modal) -->
+            <button class="btn btn-outline-dark" data-bs-toggle="modal" data-bs-target="#modalHapusAkun">Hapus Akun</button>
+
+            <!-- Tombol Log Out (trigger modal) -->
+            <button class="btn btn-outline-dark" data-bs-toggle="modal" data-bs-target="#modalLogout">Log Out</button>
+
+            <!-- Tombol Edit -->
+            <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#editModal">Edit Profile</button>
+        </div>
+    </div>
+
+    <!-- Modal Log Out -->
+    <div class="modal fade" id="modalLogout" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content text-center p-4">
+                <h3 class="fw-bold mb-3">Log Out</h3>
+                <p class="mb-4">Apa anda ingin keluar aplikasi?</p>
+                <div class="d-flex justify-content-around">
+                    <button class="btn btn-secondary" data-bs-dismiss="modal">Tidak</button>
+                    <a href="#" class="btn btn-danger">Ya</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Hapus Akun -->
+    <div class="modal fade" id="modalHapusAkun" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content text-center p-4">
+                <h3 class="fw-bold mb-3">Hapus Akun</h3>
+                <p class="mb-4">Apa anda ingin menghapus akun?</p>
+                <div class="d-flex justify-content-around">
+                    <button class="btn btn-secondary" data-bs-dismiss="modal">Tidak</button>
+                    <a href="#" class="btn btn-danger">Ya</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Edit Profile -->
+    <div class="modal fade" id="editModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog">
+            <form method="post" enctype="multipart/form-data" class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Edit Profil</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="mb-3">
+                        <label class="form-label">Nama Lengkap</label>
+                        <input type="text" name="namaLengkap" class="form-control" value="Panji Sunari" required>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Email</label>
+                        <input type="email" name="email" class="form-control" value="panji@gmail.com" required>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">NIM</label>
+                        <input type="text" name="nim" class="form-control" value="245150400000" required>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Foto Profil (JPG / PNG)</label>
+                        <input type="file" name="fotoProfil" class="form-control">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="submit" class="btn btn-success">Simpan Perubahan</button>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Batal</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
