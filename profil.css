@@ -10,39 +10,39 @@ body {
     position: absolute;
     top: 10px;
     left: 10px;
-    font-size: 28px; /* icon lebih besar */
+    font-size: 28px; 
     text-decoration: none;
-    color: #000; /* warna icon tebal */
-    background-color: #fff; /* background putih */
-    border: 2px solid #000; /* border tebal hitam */
-    border-radius: 50%; /* bulat */
-    width: 50px; /* lebih besar */
+    color: #000; 
+    background-color: #fff; 
+    border: 2px solid #000; 
+    border-radius: 50%; 
+    width: 50px; 
     height: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.15); /* shadow lebih jelas */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15); 
     transition: all 0.2s ease-in-out;
 }
 
 .back-btn:hover {
     background-color: #f0f0f0;
-    transform: scale(1.05); /* sedikit membesar pas hover */
+    transform: scale(1.05);
 }
 
 .profile-pic {
     width: 180px;
     height: 180px;
     border-radius: 50%;
-    border: 2px solid #333; /* Border tipis elegan */
-    background-color: #fff; /* Putih atau transparan */
+    border: 2px solid #333;
+    background-color: #fff;
     display: inline-flex;
     align-items: center;
     justify-content: center;
     margin: 3rem auto 1rem;
     position: relative;
     overflow: hidden;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* shadow halus */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); 
 }
 
 .profile-pic::after {
@@ -87,7 +87,7 @@ body {
 /* Tombol */
 .btn-outline-dark {
     min-width: 140px;
-    border-width: 1px; /* tipis */
+    border-width: 1px; 
     font-weight: bold;
 }
 
@@ -105,7 +105,7 @@ body {
 .modal-content {
     border-radius: 12px;
     padding: 2rem;
-    border: 1px solid #fff; /* border modal tipis */
+    border: 1px solid #fff;
 }
 
 .modal-content h3, .modal-title {
